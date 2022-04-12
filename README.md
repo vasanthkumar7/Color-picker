@@ -1,10 +1,13 @@
+# Abstract
+
+Creating a color picker using python programming language
+
 # Requirements
 
 - tkinter
 - Pillow ( PIL )
 
 # Headers 
-
 ```
 from tkinter import * 
 from tkinter import colorchooser ,filedialog
@@ -17,8 +20,6 @@ tkinter is for the UI of the Application .
 PIL is used for getting image information
 
 # Initial setup
-
-
 ```
 root=Tk()
 root.title(" Click on any where on image to pick a color  ")
@@ -30,9 +31,6 @@ First we are creating a window in which we are going to place a canvas
 
 
 # Functions
-
-
-
 ```
 def _from_rgb(rgb):
     return "#%02x%02x%02x" % rgb
@@ -101,7 +99,6 @@ this function will reduce the original image width and height to fit in the scre
 this function will open another image after opening the initial image
 
 # Rest of the setup
-
 ```
 imgname=filedialog.askopenfilename(initialdir="/Desktop/python codes",title="open images",filetypes=(("png files","*.png"),("jpg files","*.jpg"),("jpeg files","*.jpeg")))
 imagename=imgname
@@ -132,6 +129,8 @@ root.mainloop()
 
 initially in this we are opening a image from any directory then that image will get displayed in the canvas . Then if any click is detected in the in canvas it will invoke the colorpic function and display the chosen color information 
 
+
+final code - [https://github.com/vasanthkumar7/Color-picker](Link)
 
 
 ![Screenshot (209).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1649703959626/GRkxUXHhL.png)
